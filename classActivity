@@ -1,0 +1,35 @@
+//create a Person class to Hold The All details
+
+class person{
+    constructor(name,id,address){
+       this.name=name;
+       this.address=address;
+       this.id=id
+       
+           this.getPersonInfo() 
+       }
+       getPersonInfo(){
+        console.log(`${this.name}   ${this.id}   ${this.address}`);
+       }
+       }
+    
+    
+
+let p1=new person("Adarsh",1,"kappachery house")
+
+
+//write a class to calculate uber price.
+
+class uberPrice{
+    constructor(distanse,waiting){
+        this.maincharge=30
+         this.distanse=distanse
+         this.waiting=waiting
+         this.ubercalc()
+    }
+    ubercalc(){
+        console.log(`${this.distanse * this.maincharge + this.waiting}`);
+    }
+}
+let car1=new uberPrice(2,10)
+
